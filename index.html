@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Allentown Properties Services</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<section id="nav-bar">
+    
+ 
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><h2 style="color:rgb(255, 255, 255);" >Allentown Properties Services</h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#nav-bar">Home</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#services">What We Provide</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#contact-section">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>  
+    
+    
+<section id="banner">
+  <p class="promo-title" style="text-align: center; padding: -20px; font-size:70px;">BUY<br>RENT<br>SELL</p>
+  <br>
+  <p style="text-align: center; font-size: 60px; font-weight: bold;"><u>Max Patel</u></p>
+  <p style="text-align: center; font-size: 60px; font-weight: bold;"><u>Jerry Dandlani</u></p>
+  <br>
+  <br>
+  <br>
+  
+</section>  
+    
+
+<section id="services">
+<div class="container text-center">
+<h1 class="title">WHAT WE PROVIDE</h1>
+<div class="row text-center">
+<div class="col-md-4 services">
+<img src="images/choice.png" class="service-img">
+<h4>Maximum Choice</h4>
+<br>
+<p>We provide the maximum choices available in the market to our clients.</p>
+</div>  
+<div class="col-md-4 services">
+<img src="images/trust.png" class="service-img">
+<h4>Buyers Trust us</h4>
+<br>
+<p>We have built an amazing trust between our clients and are continuing to build it with our new clients.</p>
+</div>  
+<div class="col-md-4 services">
+<img src="images/expert.png" class="service-img">
+<h4>Expert Guidence </h4>
+<br>
+<p>We guide our clients with our expertise no matter what.</p>
+</div>  
+</div>   
+</div>   
+</section>
+
+
+
+
+<section id="services">
+  <div class="container text-center">
+    <h3 class="title">Want to find out how much you can get for that property ? Let me make you a no-obligation cash offer.</h3>
+    <p style="font-size: 25px; color: #007bff; font-weight: bold;">- Sell your house, property fast</p>
+    <p style="font-size: 25px;">- Avoid making needed repairs as <a style="color: #007bff; font-weight: bold;">we will buy houses 'as-is'</a> in Lehigh Valley and the surrounding counties.</p>
+    <p style="font-size: 25px;">- Avoid listing with an agent and paying thousands in commissions</p>
+    <br>
+    <br>
+    <p style="font-size: 30px; color: lightslategray">To get started, simply fill out the form or scroll down to find out more about how I buy houses.</p>
+    <p style="font-size: 25px; color: rgb(28, 150, 216)">For fastest service, call me now</p>  
+    <br>
+    
+
+    <form id="my-form" action="https://formspree.io/f/mjvpnayl" method="POST" class="contact__form">
+      <input type="text" placeholder="Name" name="name" class="contact__input">
+      <input type="email"  placeholder="Email" name="email" class="contact__input">
+      <input type="text"  placeholder="Phone Number" name="Phone Number" class="contact__input">
+      <textarea type="text" placeholder="Message" name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+      <input class="contact__button button1" type="submit" value="Send" id="my-form-button">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="skills__text" id="my-form-status"></p>
+      </form>
+
+      <!-- Place this script at the end of the body tag -->
+      <script>
+      window.addEventListener("DOMContentLoaded", function() {
+      var form = document.getElementById("my-form");
+      var button = document.getElementById("my-form-button");
+      var status = document.getElementById("my-form-status");
+      function success() {
+          form.reset();
+          button.style = "display: none ";
+          status.innerHTML = "Thanks! One of our team members will contact you soon!";
+      }
+      function error() {
+          status.innerHTML = "Oops! There was a problem. Please try again!";
+      }
+      form.addEventListener("submit", function(ev) {
+          ev.preventDefault();
+          var data = new FormData(form);
+          ajax(form.method, form.action, data, success, error);
+      });
+      });
+      function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+          } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+          }
+      };
+      xhr.send(data);
+      }
+      </script>
+  
+
+  </div> 
+</section>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<section id="footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 footer-box">
+          <h2 style="color:rgb(255, 255, 255);" >Allentown Properties Services </h2>
+          <br>
+          <p>Buy land; they’re not making it anymore.<br>- Mark Twain</p>
+      </div> 
+      <div class="col-md-4 footer-box">
+        <br>
+        <br>
+      </div>
+      <div class="col-md-4 footer-box" id="contact-section">
+          <p style="font-weight: bold; font-size: 30px;"><u>CONTACT US</u></p>
+          <p style="color: #ffffff; font-size: 20px;">472 Lisa Ct, Allentown, PA 18104</p>
+          <p><a href="tel:+14846025947" style="color: #ffffff; font-size: 20px;">+1 (484)-602-5947</a></p>
+          <p><a href="mailto:allentownpropertiesservices@gmail.com" style="color: #ffffff; font-size: 18px;">allentownpropertiesservices@gmail.com</a></p>
+          
+      </div>
+    </div>
+    <br>
+    <h3 style="text-align: center;">&#169; Copyright All Rights Reserved</h3>
+    <br>
+  </div>
+ 
+</section>    
+
+
+</body>
+</html>

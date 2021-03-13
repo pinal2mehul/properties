@@ -1,0 +1,223 @@
+*
+{
+    margin: 0;
+    padding: 0px;
+}
+body
+{
+    font-family: sans-serif;
+   
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #007bff, #007bff);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+
+/*-------------banner section---------------*/
+
+#banner
+{
+    background-image:url(https://i.insider.com/5d56f971cd9784745e68feff?width=1200&format=jpeg);
+    color: rgb(254, 255, 254);
+    background-size: cover;
+    opacity: 70%;
+    padding-top: 5%;
+}
+.promo-title
+{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+#banner a
+{
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  
+}
+
+
+/*-----------services section--------------*/
+
+#services
+{
+    padding: 80px 0;
+}
+.service-img
+{
+    width: 100px;
+    margin-top: 20px;
+}
+.services
+{
+    padding: 20px;
+}
+.services h4
+{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.title::before
+{
+    content: '';
+   
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);    
+}
+.title::after
+{
+    content: '';
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);    
+}
+
+
+
+#about-us
+{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.about-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+#about-us ul li
+{
+    margin: 10px 0;
+}
+
+#about-us ul
+{
+    margin-left: 20px;
+}
+
+#social-media
+{
+    background: #f8f9fa;
+    padding: 100px 0px;
+}
+#social-media p
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img
+{
+    width: 90px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+
+
+#footer
+{
+    background-color: #007bff;
+    color: #fff;
+}
+
+.footer-box
+{
+    padding: 20px;
+}
+
+ul {
+    justify-content: center;
+    display: flex;
+}
+
+  
+
+
+
+.contact__form{
+    width: 360px;
+    justify-content: center;
+    margin: auto;
+} 
+
+.contact__input{
+    width: 100%;
+    font-size: 0.938rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid #007bff;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+.contact__button{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 0.938rem;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .button1 {
+    display: inline-block;
+    background-color: #4070F4;
+    color: #fff;
+    padding: .75rem 2.5rem;
+    font-weight: 600;
+    border-radius: .5rem;
+  }
+
+  .skills__text{
+    margin-bottom: 1rem;
+    font-family: 'Arial';
+    font-size: 20px;
+  }
